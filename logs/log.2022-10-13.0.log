@@ -1,0 +1,71 @@
+23:17:59.384 [main] INFO  com.nbu.Application - Starting Application v1.0-SNAPSHOT using Java 1.8.0_341 on LAPTOP-EQDM0DJB with PID 624 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\summer-1.0-SNAPSHOT.jar started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target)
+23:17:59.387 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+23:17:59.387 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+23:18:00.198 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:18:00.201 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+23:18:00.223 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+23:18:01.714 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+23:18:01.793 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+23:18:01.794 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:18:01.794 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+23:18:01.863 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:18:01.863 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2417 ms
+23:18:02.852 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+23:18:03.179 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+23:18:03.219 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+23:18:03.220 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+23:18:03.246 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+23:18:03.286 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+23:18:03.407 [main] INFO  com.nbu.Application - Started Application in 4.56 seconds (JVM running for 5.163)
+23:18:45.364 [http-nio-8081-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x00{0x010x000x00w0x030x03&0x12L0xf40xb50xc80xae0xe40xf10xda?0xcf0x9b0x070xee0x0c0x04X0x970x990xe7p0x950x130x80>0xf30x9e0xb5P0x010x850x000x000x120xc0+0xc0/0xc00x0a0xc00x090xc00x130xc00x140x000x9c0x00/0x0050x010x000x00<0x000x170x000x000xff0x010x000x010x000x000x0a0x000x080x000x060x000x1d0x000x170x000x180x000x0b0x000x020x010x000x000x050x000x050x010x000x000x000x000x000x0d0x000x140x000x120x040x030x080x040x040x010x050x030x080x050x050x010x080x060x060x010x020x01...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+23:20:36.128 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:20:36.129 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:20:36.130 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:20:58.969 [http-nio-8081-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:21:00.100 [http-nio-8081-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:21:00.106 [http-nio-8081-exec-4] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==>  Preparing: SELECT id FROM user_info WHERE username=? AND password=?
+23:21:00.117 [http-nio-8081-exec-4] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==> Parameters: cctv_gs(String), e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928(String)
+23:21:00.248 [http-nio-8081-exec-4] TRACE c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==    Columns: id
+23:21:00.248 [http-nio-8081-exec-4] TRACE c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==        Row: 0
+23:21:00.251 [http-nio-8081-exec-4] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==      Total: 1
+23:21:00.259 [http-nio-8081-exec-4] INFO  c.n.s.impl.SimpleUserInfoService - µÇÂ¼³É¹¦,ÉèÖÃ»º´æ
+23:21:34.738 [http-nio-8081-exec-8] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:21:34.738 [http-nio-8081-exec-8] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:22:04.641 [http-nio-8081-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+23:22:11.246 [http-nio-8081-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+23:23:38.469 [http-nio-8081-exec-10] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:23:38.469 [http-nio-8081-exec-10] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:23:44.780 [http-nio-8081-exec-3] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:23:44.781 [http-nio-8081-exec-3] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:23:45.749 [http-nio-8081-exec-8] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:23:45.749 [http-nio-8081-exec-8] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:24:56.222 [http-nio-8081-exec-5] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:24:56.223 [http-nio-8081-exec-5] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:25:58.885 [http-nio-8081-exec-9] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:25:58.885 [http-nio-8081-exec-9] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:26:42.818 [http-nio-8081-exec-2] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:26:42.819 [http-nio-8081-exec-2] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:28:26.454 [http-nio-8081-exec-10] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:28:26.455 [http-nio-8081-exec-10] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:29:16.206 [http-nio-8081-exec-8] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:29:16.207 [http-nio-8081-exec-8] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:30:27.464 [http-nio-8081-exec-5] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:30:27.465 [http-nio-8081-exec-5] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:55:29.436 [http-nio-8081-exec-9] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:55:29.436 [http-nio-8081-exec-9] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:56:53.444 [http-nio-8081-exec-2] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:56:53.444 [http-nio-8081-exec-2] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+23:57:40.521 [http-nio-8081-exec-10] INFO  c.n.s.impl.SimpleUserInfoService - »º´æÃüÖÐ£¬³É¹¦µÇÂ¼
+23:57:40.522 [http-nio-8081-exec-10] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"

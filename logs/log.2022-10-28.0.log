@@ -1,0 +1,43 @@
+09:55:44.556 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 2064 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer)
+09:55:44.558 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+09:55:44.558 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+09:55:46.808 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+09:55:46.814 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+09:55:46.896 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+09:55:49.232 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+09:55:49.246 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+09:55:49.246 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:55:49.247 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+09:55:49.393 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:55:49.393 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4777 ms
+09:55:51.757 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09:55:52.489 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+09:55:52.522 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+09:55:52.522 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+09:55:52.562 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09:55:52.597 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+09:55:52.771 [main] INFO  com.nbu.Application - Started Application in 9.732 seconds (JVM running for 16.095)
+10:24:08.322 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:24:08.323 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:24:08.326 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+10:24:10.549 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:24:11.853 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:24:11.860 [http-nio-8081-exec-1] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==>  Preparing: SELECT id FROM user_info WHERE username=? AND password=?
+10:24:11.871 [http-nio-8081-exec-1] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==> Parameters: cctv_gs(String), e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928(String)
+10:24:11.894 [http-nio-8081-exec-1] TRACE c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==    Columns: id
+10:24:11.894 [http-nio-8081-exec-1] TRACE c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==        Row: 0
+10:24:11.896 [http-nio-8081-exec-1] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==      Total: 1
+10:24:11.904 [http-nio-8081-exec-1] INFO  c.n.s.impl.SimpleUserInfoService - 登录成功,设置缓存
+11:15:04.131 [http-nio-8081-exec-3] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+11:15:04.131 [http-nio-8081-exec-3] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+11:17:49.216 [http-nio-8081-exec-5] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==>  Preparing: SELECT id FROM user_info WHERE username=? AND password=?
+11:17:49.218 [http-nio-8081-exec-5] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==> Parameters: 请输入用户名(String), 728a7b601c56bdf8b35a7bd801b4044814c966cacacebedf1122752b9bb25488(String)
+11:17:49.225 [http-nio-8081-exec-5] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==      Total: 0
+11:17:49.226 [http-nio-8081-exec-5] INFO  c.n.s.impl.SimpleUserInfoService - 登录失败，用户或密码错误
+11:18:04.139 [http-nio-8081-exec-6] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，登录失败
+11:18:04.139 [http-nio-8081-exec-6] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+11:18:04.140 [http-nio-8081-exec-6] DEBUG c.n.s.impl.SimpleUserInfoService - f49966918fdb5765f052f3a41ea1b19b68381054b906aa50e80ff874070118fc
+11:18:15.376 [http-nio-8081-exec-7] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+11:18:15.377 [http-nio-8081-exec-7] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+11:37:49.554 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:37:49.558 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

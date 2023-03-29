@@ -1,0 +1,264 @@
+23:47:59.424 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 23860 (C:\Users\CCTV\Desktop\new summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\new summer)
+23:47:59.428 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+23:47:59.429 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+23:48:00.777 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:48:00.781 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+23:48:00.892 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 0 Redis repository interfaces.
+23:48:02.627 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+23:48:02.640 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+23:48:02.641 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:48:02.641 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+23:48:02.755 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:48:02.755 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3216 ms
+23:48:03.605 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'motorController': Unsatisfied dependency expressed through field 'driverMotorService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'SimpleDriverMotorService': Unsatisfied dependency expressed through field 'dSerialPort'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.nbu.util.DSerialPort' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=SerialPortTool)}
+23:48:03.632 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+23:48:03.645 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+23:48:03.672 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dSerialPort in com.nbu.service.impl.SimpleDriverMotorService required a bean of type 'com.nbu.util.DSerialPort' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+	- @org.springframework.beans.factory.annotation.Qualifier(value=SimpleDriverMotorService)
+
+
+Action:
+
+Consider defining a bean of type 'com.nbu.util.DSerialPort' in your configuration.
+
+23:48:51.520 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 4308 (C:\Users\CCTV\Desktop\new summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\new summer)
+23:48:51.524 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+23:48:51.524 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+23:48:52.650 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:48:52.653 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+23:48:52.729 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 0 Redis repository interfaces.
+23:48:54.376 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+23:48:54.388 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+23:48:54.389 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:48:54.389 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+23:48:54.507 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:48:54.508 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2909 ms
+23:48:55.262 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'netWorkController': Unsatisfied dependency expressed through field 'serialPortMessageReceiveService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.nbu.service.SerialPortMessageReceiveService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=SimpleSerialPortMessageMessageReceiveService)}
+23:48:55.283 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+23:48:55.294 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+23:48:55.316 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field serialPortMessageReceiveService in com.nbu.controller.NetWorkController required a bean of type 'com.nbu.service.SerialPortMessageReceiveService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+	- @org.springframework.beans.factory.annotation.Qualifier(value=SimpleSerialPortMessageMessageReceiveService)
+
+
+Action:
+
+Consider defining a bean of type 'com.nbu.service.SerialPortMessageReceiveService' in your configuration.
+
+23:49:52.065 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 23832 (C:\Users\CCTV\Desktop\new summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\new summer)
+23:49:52.068 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+23:49:52.068 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+23:49:53.094 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:49:53.097 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+23:49:53.163 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 0 Redis repository interfaces.
+23:49:54.579 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+23:49:54.589 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+23:49:54.590 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:49:54.590 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+23:49:54.697 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:49:54.697 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2567 ms
+23:49:55.432 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'netWorkController': Unsatisfied dependency expressed through field 'serialPortMessageReceiveService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.nbu.service.SerialPortMessageReceiveService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=SimpleSerialPortMessageMessageReceiveService)}
+23:49:55.452 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+23:49:55.463 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+23:49:55.485 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field serialPortMessageReceiveService in com.nbu.controller.NetWorkController required a bean of type 'com.nbu.service.SerialPortMessageReceiveService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+	- @org.springframework.beans.factory.annotation.Qualifier(value=SimpleSerialPortMessageMessageReceiveService)
+
+
+Action:
+
+Consider defining a bean of type 'com.nbu.service.SerialPortMessageReceiveService' in your configuration.
+
+23:51:12.545 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 12620 (C:\Users\CCTV\Desktop\new summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\new summer)
+23:51:12.548 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+23:51:12.549 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+23:51:13.658 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:51:13.661 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+23:51:13.728 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 0 Redis repository interfaces.
+23:51:15.194 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+23:51:15.205 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+23:51:15.205 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:51:15.206 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+23:51:15.307 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:51:15.307 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2691 ms
+23:51:16.080 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'SimpleDriverMotorService': Unsatisfied dependency expressed through field 'dSerialPort'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.nbu.util.DSerialPort' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=SerialPortTool)}
+23:51:16.105 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+23:51:16.115 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+23:51:16.136 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dSerialPort in com.nbu.service.impl.SimpleDriverMotorService required a bean of type 'com.nbu.util.DSerialPort' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+	- @org.springframework.beans.factory.annotation.Qualifier(value=SerialPortTool)
+
+
+Action:
+
+Consider defining a bean of type 'com.nbu.util.DSerialPort' in your configuration.
+
+23:52:03.845 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 19088 (C:\Users\CCTV\Desktop\new summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\new summer)
+23:52:03.847 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+23:52:03.848 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+23:52:04.856 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:52:04.859 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+23:52:04.925 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 0 Redis repository interfaces.
+23:52:06.355 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+23:52:06.366 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+23:52:06.367 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:52:06.367 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+23:52:06.470 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:52:06.470 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2560 ms
+23:52:08.510 [main] INFO  c.n.service.impl.SimpleTHMqttService - 建立Mqtt服务...
+23:52:08.512 [MQTT Call: mqtt_888999zsj] DEBUG c.n.service.impl.SimpleTHMqttService - Mqtt发送主题为/Word的消息
+23:52:08.512 [MQTT Call: mqtt_888999zsj] INFO  c.n.service.impl.SimpleTHMqttService - 解析Mqtt发布数据.....
+23:52:08.512 [MQTT Call: mqtt_888999zsj] INFO  c.n.service.impl.SimpleTHMqttService - Mqtt发布消息解析完毕，开始持久化....
+23:52:08.531 [MQTT Call: mqtt_888999zsj] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:52:09.051 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+23:52:09.584 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+23:52:09.625 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+23:52:09.627 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+23:52:09.664 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+23:52:09.717 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+23:52:09.881 [MQTT Call: mqtt_888999zsj] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:52:09.899 [MQTT Call: mqtt_888999zsj] DEBUG c.n.m.N.InsertOneRecode - ==>  Preparing: INSERT INTO new_th_info (device_id,temperature,humidity,recode_date ) VALUES(?,?,?,?)
+23:52:09.957 [MQTT Call: mqtt_888999zsj] DEBUG c.n.m.N.InsertOneRecode - ==> Parameters: 0(String), WG20221130(String), 10(String), 2022-12-19 23:52:08.512(Timestamp)
+23:52:09.965 [main] INFO  com.nbu.Application - Started Application in 6.687 seconds (JVM running for 7.174)
+23:52:10.045 [MQTT Call: mqtt_888999zsj] DEBUG c.n.m.N.InsertOneRecode - <==    Updates: 1
+23:53:06.915 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:53:06.916 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:53:06.917 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:53:10.667 [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+23:54:34.840 [http-nio-8081-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+23:55:21.462 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:55:21.473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:55:25.398 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 27856 (C:\Users\CCTV\Desktop\new summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\new summer)
+23:55:25.401 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+23:55:25.402 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+23:55:26.446 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:55:26.449 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+23:55:26.565 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 0 Redis repository interfaces.
+23:55:28.115 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+23:55:28.128 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+23:55:28.129 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:55:28.129 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+23:55:28.250 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:55:28.251 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2782 ms
+23:55:29.472 [main] INFO  c.n.service.impl.SimpleTHMqttService - 建立Mqtt服务...
+23:55:29.474 [MQTT Call: mqtt_888999zsj] DEBUG c.n.service.impl.SimpleTHMqttService - Mqtt发送主题为/Word的消息
+23:55:29.474 [MQTT Call: mqtt_888999zsj] INFO  c.n.service.impl.SimpleTHMqttService - 解析Mqtt发布数据.....
+23:55:29.474 [MQTT Call: mqtt_888999zsj] INFO  c.n.service.impl.SimpleTHMqttService - Mqtt发布消息解析完毕，开始持久化....
+23:55:29.494 [MQTT Call: mqtt_888999zsj] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:55:30.047 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+23:55:30.577 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+23:55:30.603 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+23:55:30.603 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+23:55:30.638 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+23:55:30.696 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+23:55:30.843 [MQTT Call: mqtt_888999zsj] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:55:30.856 [MQTT Call: mqtt_888999zsj] DEBUG c.n.m.N.InsertOneRecode - ==>  Preparing: INSERT INTO new_th_info (device_id,temperature,humidity,recode_date ) VALUES(?,?,?,?)
+23:55:30.894 [main] INFO  com.nbu.Application - Started Application in 6.171 seconds (JVM running for 6.72)
+23:55:30.897 [MQTT Call: mqtt_888999zsj] DEBUG c.n.m.N.InsertOneRecode - ==> Parameters: 0(String), WG20221130(String), 10(String), 2022-12-19 23:55:29.474(Timestamp)
+23:55:31.025 [MQTT Call: mqtt_888999zsj] WARN  c.n.service.impl.SimpleTHMqttService - 连接丢失，立马尝试重新连接
+23:55:31.026 [MQTT Call: mqtt_888999zsj] DEBUG c.n.service.impl.SimpleTHMqttService - 重新连接将会在3秒后开始...
+23:55:34.027 [MQTT Call: mqtt_888999zsj] DEBUG c.n.service.impl.SimpleTHMqttService - 开始重新连接
+23:58:33.301 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:58:33.301 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:58:33.303 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:58:35.082 [http-nio-8081-exec-1] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==>  Preparing: SELECT id FROM user_info WHERE username=? AND password=?
+23:58:35.082 [http-nio-8081-exec-1] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==> Parameters: csy(String), 38e3982ba6ec9b7c0558e951f3cd197baf4378a4f8a428db74fbd87b83423233(String)
+23:58:35.118 [http-nio-8081-exec-1] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==      Total: 0
+23:58:35.118 [http-nio-8081-exec-1] INFO  c.n.s.impl.SimpleUserInfoService - 登录失败，用户或密码错误
+23:59:44.948 [http-nio-8081-exec-3] DEBUG c.n.m.U.GetUserInfoIdByUsername - ==>  Preparing: SELECT id FROM user_info WHERE username=?
+23:59:44.948 [http-nio-8081-exec-3] DEBUG c.n.m.U.GetUserInfoIdByUsername - ==> Parameters: csy2(String)
+23:59:44.949 [http-nio-8081-exec-3] DEBUG c.n.m.U.GetUserInfoIdByUsername - <==      Total: 0
+23:59:44.949 [http-nio-8081-exec-3] DEBUG c.n.s.impl.SimpleUserInfoService - UserInfo{id=null, username='csy2', password='15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225', createDate=Mon Dec 19 23:59:44 CST 2022, updateDate=Mon Dec 19 23:59:44 CST 2022, level=1}
+23:59:44.950 [http-nio-8081-exec-3] DEBUG c.n.m.UserInfoMapper.InsertUserInfo - ==>  Preparing: INSERT INTO user_info (id,username,password,create_date,update_date,level) VALUES (?,?,?,?,?,?)
+23:59:44.951 [http-nio-8081-exec-3] DEBUG c.n.m.UserInfoMapper.InsertUserInfo - ==> Parameters: null, csy2(String), 15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225(String), 2022-12-19 23:59:44.946(Timestamp), 2022-12-19 23:59:44.946(Timestamp), 1(Integer)
+23:59:44.958 [http-nio-8081-exec-3] DEBUG c.n.m.UserInfoMapper.InsertUserInfo - <==    Updates: 1
+23:59:54.974 [http-nio-8081-exec-4] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+23:59:54.975 [http-nio-8081-exec-4] DEBUG c.n.s.impl.SimpleUserInfoService - "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225"
+23:59:54.976 [http-nio-8081-exec-4] DEBUG c.n.m.U.GetUserInfoIdByUsername - ==>  Preparing: SELECT id FROM user_info WHERE username=?
+23:59:54.976 [http-nio-8081-exec-4] DEBUG c.n.m.U.GetUserInfoIdByUsername - ==> Parameters: csy2(String)
+23:59:54.978 [http-nio-8081-exec-4] TRACE c.n.m.U.GetUserInfoIdByUsername - <==    Columns: id
+23:59:54.978 [http-nio-8081-exec-4] TRACE c.n.m.U.GetUserInfoIdByUsername - <==        Row: 2
+23:59:54.980 [http-nio-8081-exec-4] DEBUG c.n.m.U.GetUserInfoIdByUsername - <==      Total: 1
+23:59:54.980 [http-nio-8081-exec-4] DEBUG c.n.m.U.SearchUserInfoById - ==>  Preparing: SELECT id,username,password,create_date,update_date,level FROM user_info WHERE id=?
+23:59:54.980 [http-nio-8081-exec-4] DEBUG c.n.m.U.SearchUserInfoById - ==> Parameters: 2(Integer)
+23:59:54.982 [http-nio-8081-exec-4] TRACE c.n.m.U.SearchUserInfoById - <==    Columns: id, username, password, create_date, update_date, level
+23:59:54.983 [http-nio-8081-exec-4] TRACE c.n.m.U.SearchUserInfoById - <==        Row: 2, csy2, 15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225, 2022-12-19 23:59:45, 2022-12-19 23:59:45, 0
+23:59:54.984 [http-nio-8081-exec-4] DEBUG c.n.m.U.SearchUserInfoById - <==      Total: 1
+23:59:57.528 [pool-1-thread-1] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==>  Preparing: SELECT file_name,file_type,upload_time,download_times FROM file_resource_info LIMIT ?,?
+23:59:57.528 [pool-1-thread-1] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==> Parameters: 0(Integer), 10(Integer)
+23:59:57.535 [pool-1-thread-1] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - <==      Total: 0

@@ -1,0 +1,104 @@
+10:59:36.946 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 21956 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer)
+10:59:36.949 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+10:59:36.949 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+10:59:39.214 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:59:39.220 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+10:59:39.326 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+10:59:41.323 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+10:59:41.336 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+10:59:41.336 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:59:41.336 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+10:59:41.463 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:59:41.463 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4443 ms
+10:59:43.918 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+10:59:44.520 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+10:59:44.553 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+10:59:44.554 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10:59:44.580 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:59:44.623 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10:59:44.771 [main] INFO  com.nbu.Application - Started Application in 9.05 seconds (JVM running for 14.466)
+11:12:12.099 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:12:12.100 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:12:12.101 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+11:12:17.619 [http-nio-8081-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:12:19.365 [http-nio-8081-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:12:19.372 [http-nio-8081-exec-7] DEBUG c.n.m.T.CounterFileResourceInfoLineNum - ==>  Preparing: SELECT count(id) FROM file_resource_info
+11:12:19.383 [http-nio-8081-exec-7] DEBUG c.n.m.T.CounterFileResourceInfoLineNum - ==> Parameters: 
+11:12:19.407 [http-nio-8081-exec-7] TRACE c.n.m.T.CounterFileResourceInfoLineNum - <==    Columns: count
+11:12:19.407 [http-nio-8081-exec-7] TRACE c.n.m.T.CounterFileResourceInfoLineNum - <==        Row: 3
+11:12:19.412 [http-nio-8081-exec-7] DEBUG c.n.m.T.CounterFileResourceInfoLineNum - <==      Total: 1
+11:12:19.425 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==>  Preparing: SELECT file_name,file_type,upload_time,download_times FROM file_resource_info LIMIT ?,?
+11:12:19.427 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==> Parameters: 0(Integer), 1(Integer)
+11:12:19.430 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==    Columns: file_name, file_type, upload_time, download_times
+11:12:19.431 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==        Row: 曾少杰206003411 实验1, .doc, 2022-09-29, 0
+11:12:19.433 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - <==      Total: 1
+11:12:19.435 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==>  Preparing: SELECT file_name,file_type,upload_time,download_times FROM file_resource_info LIMIT ?,?
+11:12:19.435 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==> Parameters: 1(Integer), 1(Integer)
+11:12:19.437 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==    Columns: file_name, file_type, upload_time, download_times
+11:12:19.437 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==        Row: 曾少杰206003411 实验3 , .doc, 2022-09-29, 0
+11:12:19.437 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - <==      Total: 1
+11:12:19.438 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==>  Preparing: SELECT file_name,file_type,upload_time,download_times FROM file_resource_info LIMIT ?,?
+11:12:19.438 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==> Parameters: 2(Integer), 1(Integer)
+11:12:19.440 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==    Columns: file_name, file_type, upload_time, download_times
+11:12:19.440 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==        Row: 曾少杰206003411 实验2, .doc, 2022-09-29, 1
+11:12:19.440 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - <==      Total: 1
+11:12:19.566 [http-nio-8081-exec-7] DEBUG c.n.m.T.CounterFileResourceInfoLineNum - ==>  Preparing: SELECT count(id) FROM file_resource_info
+11:12:19.566 [http-nio-8081-exec-7] DEBUG c.n.m.T.CounterFileResourceInfoLineNum - ==> Parameters: 
+11:12:19.568 [http-nio-8081-exec-7] TRACE c.n.m.T.CounterFileResourceInfoLineNum - <==    Columns: count
+11:12:19.569 [http-nio-8081-exec-7] TRACE c.n.m.T.CounterFileResourceInfoLineNum - <==        Row: 3
+11:12:19.569 [http-nio-8081-exec-7] DEBUG c.n.m.T.CounterFileResourceInfoLineNum - <==      Total: 1
+11:12:19.570 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==>  Preparing: SELECT file_name,file_type,upload_time,download_times FROM file_resource_info LIMIT ?,?
+11:12:19.570 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==> Parameters: 0(Integer), 1(Integer)
+11:12:19.572 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==    Columns: file_name, file_type, upload_time, download_times
+11:12:19.573 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==        Row: 曾少杰206003411 实验1, .doc, 2022-09-29, 0
+11:12:19.573 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - <==      Total: 1
+11:12:19.573 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==>  Preparing: SELECT file_name,file_type,upload_time,download_times FROM file_resource_info LIMIT ?,?
+11:12:19.573 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==> Parameters: 1(Integer), 1(Integer)
+11:12:19.575 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==    Columns: file_name, file_type, upload_time, download_times
+11:12:19.575 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==        Row: 曾少杰206003411 实验3 , .doc, 2022-09-29, 0
+11:12:19.576 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - <==      Total: 1
+11:12:19.576 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==>  Preparing: SELECT file_name,file_type,upload_time,download_times FROM file_resource_info LIMIT ?,?
+11:12:19.577 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - ==> Parameters: 2(Integer), 1(Integer)
+11:12:19.578 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==    Columns: file_name, file_type, upload_time, download_times
+11:12:19.579 [http-nio-8081-exec-7] TRACE c.n.m.F.QueryFileResourceInfoByLimit - <==        Row: 曾少杰206003411 实验2, .doc, 2022-09-29, 1
+11:12:19.579 [http-nio-8081-exec-7] DEBUG c.n.m.F.QueryFileResourceInfoByLimit - <==      Total: 1
+11:42:22.381 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:42:22.390 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15:05:19.413 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 5996 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer)
+15:05:19.415 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+15:05:19.415 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+15:05:20.437 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+15:05:20.442 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:05:20.474 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+15:05:22.348 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+15:05:22.360 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+15:05:22.360 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:05:22.361 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+15:05:22.465 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:05:22.466 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2961 ms
+15:05:23.849 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+15:05:24.324 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+15:05:24.347 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+15:05:24.348 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+15:05:24.379 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+15:05:24.422 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+15:05:24.632 [main] INFO  com.nbu.Application - Started Application in 5.943 seconds (JVM running for 6.58)
+15:06:12.236 [main] INFO  com.nbu.Application - Starting Application v1.0-SNAPSHOT using Java 1.8.0_341 on LAPTOP-EQDM0DJB with PID 13588 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\summer-1.0-SNAPSHOT.jar started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target)
+15:06:12.239 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+15:06:12.240 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+15:06:13.000 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+15:06:13.003 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:06:13.025 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+15:06:14.402 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+15:06:14.474 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+15:06:14.476 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:06:14.476 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+15:06:14.542 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:06:14.542 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2245 ms
+15:06:15.499 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+15:06:15.816 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+15:06:15.856 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+15:06:15.857 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+15:06:15.877 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+15:06:15.908 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+15:06:16.044 [main] INFO  com.nbu.Application - Started Application in 4.352 seconds (JVM running for 5.0)

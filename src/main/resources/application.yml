@@ -1,0 +1,41 @@
+server:
+  port: 8081
+
+logging:
+  config: logback.xml
+  level:
+    com.nbu: trace
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/nbu?useSSL=true&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: yhl&20021003
+   # driver-class-name: org.postgresql.Driver
+    #url: jdbc:postgresql://127.0.0.1:5432/postgres?useSSL=false
+    #username: zsj
+    #password: Enmo@123
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: Zz19800611
+  jackson:
+    # 常用请求与响应自动转下划线，空值字段不传输
+    property-naming-strategy: SNAKE_CASE
+    default-property-inclusion: non_null
+  swagger:
+    docket:
+      base-package: io.github.jackson
+    enabled: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: false
+#  type-aliases-package: com.nbu.pojo

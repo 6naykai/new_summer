@@ -1,0 +1,208 @@
+15:55:11.946 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 20116 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer)
+15:55:11.951 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+15:55:11.951 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+15:55:13.749 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+15:55:13.753 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:55:13.827 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+15:55:16.060 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+15:55:16.108 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+15:55:16.108 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:55:16.108 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+15:55:16.274 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:55:16.275 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4237 ms
+15:55:18.643 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+15:55:19.369 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+15:55:19.420 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+15:55:19.421 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+15:55:19.449 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+15:55:19.487 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+15:55:19.658 [main] INFO  com.nbu.Application - Started Application in 9.003 seconds (JVM running for 13.756)
+16:47:58.563 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:47:58.569 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:47:58.602 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 33 ms
+16:58:53.333 [http-nio-8081-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x00{0x010x000x00w0x030x030xf80x190xc30xdf0xae0xdff0xaey0x9a0xf9`0x810x07{0x160xf1l ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+17:33:51.971 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 10360 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer)
+17:33:51.978 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+17:33:51.979 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+17:33:53.965 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:33:53.969 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:33:54.022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+17:33:56.202 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+17:33:56.252 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+17:33:56.252 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:33:56.253 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:33:56.761 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:33:56.761 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4677 ms
+17:33:59.160 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+17:33:59.929 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+17:33:59.967 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+17:33:59.968 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:34:00.015 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:34:00.070 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:34:00.247 [main] INFO  com.nbu.Application - Started Application in 9.378 seconds (JVM running for 13.547)
+17:35:06.495 [http-nio-8081-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x00{0x010x000x00w0x030x030x1f0xd5p0x970xcf0xcf0xc20x880x81t0x16!0xe80xcd!{r0xf5t0xca0x8e_=0x0d0xc50xcf{a0xd0;0xc5z0x000x000x120xc0+0xc0/0xc00x0a0xc00x090xc00x130xc00x140x000x9c0x00/0x0050x010x000x00<0x000x170x000x000xff0x010x000x010x000x000x0a0x000x080x000x060x000x1d0x000x170x000x180x000x0b0x000x020x010x000x000x050x000x050x010x000x000x000x000x000x0d0x000x140x000x120x040x030x080x040x040x010x050x030x080x050x050x010x080x060x060x010x020x01...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+17:38:26.389 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 844 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer)
+17:38:26.392 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+17:38:26.392 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+17:38:27.584 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:38:27.587 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:38:27.614 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+17:38:29.094 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+17:38:29.144 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+17:38:29.144 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:38:29.145 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:38:29.244 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:38:29.244 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2761 ms
+17:38:30.557 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+17:38:31.141 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+17:38:31.168 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+17:38:31.169 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:38:31.202 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:38:31.251 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:38:31.475 [main] INFO  com.nbu.Application - Started Application in 5.704 seconds (JVM running for 6.239)
+17:39:41.264 [http-nio-8081-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x00{0x010x000x00w0x030x030x950xfa0xed0xb90xb80x1b0x830xa1IB0xff ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+17:41:00.461 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:41:00.461 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:41:00.463 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+17:41:02.918 [http-nio-8081-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:41:04.255 [http-nio-8081-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:41:04.264 [http-nio-8081-exec-2] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==>  Preparing: SELECT id FROM user_info WHERE username=? AND password=?
+17:41:04.276 [http-nio-8081-exec-2] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - ==> Parameters: cctv_gs(String), e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928(String)
+17:41:04.314 [http-nio-8081-exec-2] TRACE c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==    Columns: id
+17:41:04.314 [http-nio-8081-exec-2] TRACE c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==        Row: 0
+17:41:04.316 [http-nio-8081-exec-2] DEBUG c.n.m.U.GetUserInfoIdByUsernameAndPassword - <==      Total: 1
+17:41:04.324 [http-nio-8081-exec-2] INFO  c.n.s.impl.SimpleUserInfoService - 登录成功,设置缓存
+17:41:07.848 [http-nio-8081-exec-3] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:41:07.848 [http-nio-8081-exec-3] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:41:08.818 [http-nio-8081-exec-4] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:41:08.818 [http-nio-8081-exec-4] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:41:09.027 [http-nio-8081-exec-5] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:41:09.028 [http-nio-8081-exec-5] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:41:09.629 [http-nio-8081-exec-6] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:41:09.630 [http-nio-8081-exec-6] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:35.304 [http-nio-8081-exec-8] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:35.304 [http-nio-8081-exec-8] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:40.091 [http-nio-8081-exec-9] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:40.091 [http-nio-8081-exec-9] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:40.271 [http-nio-8081-exec-10] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:40.271 [http-nio-8081-exec-10] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:40.915 [http-nio-8081-exec-1] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:40.916 [http-nio-8081-exec-1] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:41.119 [http-nio-8081-exec-2] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:41.120 [http-nio-8081-exec-2] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:41.300 [http-nio-8081-exec-3] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:41.300 [http-nio-8081-exec-3] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:41.451 [http-nio-8081-exec-4] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:41.451 [http-nio-8081-exec-4] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:41.636 [http-nio-8081-exec-5] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:41.636 [http-nio-8081-exec-5] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:41.805 [http-nio-8081-exec-6] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:41.805 [http-nio-8081-exec-6] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:41.973 [http-nio-8081-exec-7] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:41.973 [http-nio-8081-exec-7] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:42.120 [http-nio-8081-exec-8] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:42.121 [http-nio-8081-exec-8] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:44:42.286 [http-nio-8081-exec-9] INFO  c.n.s.impl.SimpleUserInfoService - 缓存命中，成功登录
+17:44:42.286 [http-nio-8081-exec-9] DEBUG c.n.s.impl.SimpleUserInfoService - "e100eb8649f1d920e31ce7593668e777938fd7d871d45e1fe0338096863d5928"
+17:46:54.390 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:46:54.399 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:46:58.385 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 6664 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer)
+17:46:58.389 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+17:46:58.389 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+17:46:59.480 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:46:59.483 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:46:59.510 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+17:47:01.574 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+17:47:01.623 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+17:47:01.624 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:47:01.624 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:47:01.755 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:47:01.756 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3278 ms
+17:47:03.087 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+17:47:03.629 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+17:47:03.660 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+17:47:03.661 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:47:03.698 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:47:03.745 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:47:03.954 [main] INFO  com.nbu.Application - Started Application in 6.306 seconds (JVM running for 7.079)
+17:47:06.554 [http-nio-8081-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x00{0x010x000x00w0x030x03.0x960xb8w0x7f0xd00x090xd8H0x0f0x0aJ/0x120x870x8c0x0a0x0680x140xfd#H0xbb0xf7Egz0x0b0xb10x860xa50x000x000x120xc0+0xc0/0xc00x0a0xc00x090xc00x130xc00x140x000x9c0x00/0x0050x010x000x00<0x000x170x000x000xff0x010x000x010x000x000x0a0x000x080x000x060x000x1d0x000x170x000x180x000x0b0x000x020x010x000x000x050x000x050x010x000x000x000x000x000x0d0x000x140x000x120x040x030x080x040x040x010x050x030x080x050x050x010x080x060x060x010x020x01...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+17:51:31.940 [main] INFO  com.nbu.Application - Starting Application using Java 1.8.0_201 on LAPTOP-EQDM0DJB with PID 18960 (C:\Users\CCTV\Desktop\Summer Work\afterServices\summer\target\classes started by CCTV in C:\Users\CCTV\Desktop\Summer Work\afterServices\summer)
+17:51:31.943 [main] DEBUG com.nbu.Application - Running with Spring Boot v2.5.8, Spring v5.3.14
+17:51:31.943 [main] INFO  com.nbu.Application - No active profile set, falling back to default profiles: default
+17:51:33.016 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:51:33.020 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:51:33.050 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+17:51:34.510 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+17:51:34.556 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+17:51:34.557 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:51:34.557 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:51:34.647 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:51:34.647 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2629 ms
+17:51:35.854 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+17:51:36.451 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+17:51:36.488 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+17:51:36.489 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+17:51:36.521 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+17:51:36.575 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+17:51:36.756 [main] INFO  com.nbu.Application - Started Application in 5.443 seconds (JVM running for 5.96)
+17:51:39.513 [http-nio-8081-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x00{0x010x000x00w0x030x030xab0xf70x930xaa0xeb|f0xacv0xba0xee@g0xb90x950xf10x890xefs0xa70xb20xa40x080xa7_0x02=0xeb0xb60x85A0x9e0x000x000x120xc0+0xc0/0xc00x0a0xc00x090xc00x130xc00x140x000x9c0x00/0x0050x010x000x00<0x000x170x000x000xff0x010x000x010x000x000x0a0x000x080x000x060x000x1d0x000x170x000x180x000x0b0x000x020x010x000x000x050x000x050x010x000x000x000x000x000x0d0x000x140x000x120x040x030x080x040x040x010x050x030x080x050x050x010x080x060x060x010x020x01...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
